@@ -1,6 +1,8 @@
 package main
 
 import (
+	"goLagash/src/api/internal/implement/helloInterface"
+
 	"github.com/gin-gonic/gin"
 )
 
