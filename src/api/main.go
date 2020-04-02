@@ -1,13 +1,16 @@
 package main
 
 import (
-	"goLagash/src/api/internal/implement/helloInterface"
-
 	"github.com/gin-gonic/gin"
+	helloInterface "github.com/goLagash/src/api/internal/controller/helloInterface"
 )
 
+/**
+main principal de Go
+*/
 func main() {
 	router := gin.Default()
-	router.GET("/ping", helloInterface.GetNoteHandler)
+	content := helloInterface.Content{}
+	router.GET("/ping", content.GetNoteHandler)
 	router.Run()
 }
