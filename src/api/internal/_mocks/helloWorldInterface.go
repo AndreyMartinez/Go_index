@@ -9,6 +9,6 @@ type mockContext struct {
 	mock.Mock
 }
 
-func (m *mockContext) Ping(c *gin.Context) {
+func (m *mockContext) GetNoteHandler(c *gin.Context) {
 	m.Called(c)
 }
